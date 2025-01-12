@@ -8,6 +8,6 @@ resource "aws_instance" "local_exec_example" {
   }
 
   provisioner "local-exec" {
-    command = "echo ${self.public_ip} >> public_IPs.txt"
+    command = "echo ${self.public_ip >> public_IPs.txt"
   }
 }
